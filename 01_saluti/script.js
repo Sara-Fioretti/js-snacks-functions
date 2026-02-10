@@ -1,13 +1,17 @@
 /* Scrivi una funzione che accetti una stringa contenente un nome e restituisca un saluto seguito dal nome fornito (es. "Ciao [nome]") */
-const userName = 'Mario';
 
 // Dichiara la funzione qui.
-function saluto (username){
-    return ("Ciao " + userName)
+function saluto (nome){
+    return ("Ciao " + nome)
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-saluto("Mario")
-console.log (saluto("Mario"))
+const userName = 'Mario';
+saluto (userName)
+console.log (saluto(userName))
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+//OPPURE con le arrow functions
+const saluto1 = (nome) => console.log("Ciao " + nome)
+saluto1 (userName)
